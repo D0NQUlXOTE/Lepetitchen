@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte du Bistrot - Le Petit Chêne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Madimi+One&display=swap" rel="stylesheet">
+       <style>
+        body {
+            font-family: 'Abel', Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); 
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-size: auto 550%; /* Ajusta o tamanho da imagem automaticamente na horizontal e mantém a altura 100% */
+            background-position: center; /* Centraliza a imagem de fundo */
+
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #d0f0c0; /* Verde fraco */
+            padding: 5px; /* Diminuí o padding */
+            justify-content: space-between;
+            max-width: 900px; /* Diminuí a largura máxima */
+
+        } .menu-item span {
+        font-size: 18px; 
+        }
+        .menu-item img {
+            max-width: 100px; /* Diminuí o tamanho máximo da imagem */
+            height: auto;
+        }
+        h2 {
+            margin-top: 0;
+            color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <header style="background-image: url('backgroundmenu.jpg');">
+        <h1>Bistrot Le Petit Chêne</h1>
+        <h2>Carte du Bistrot</h2>
+    </header>
+    <ul class="menu-category">
+        <li>
+            <h2>Entrées:</h2>
+            <div class="menu-item" onmouseover="showImage(1)">
+                <span>Salade de Chèvre Chaud - 11€</span>
+                <img src="1.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(2)">
+                <span>Soupe à l'Oignon Gratineé - 13€</span>
+                <img src="2.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(3)">
+                <span>Terrine Maison - 13€</span>
+                <img src="3.jpg" alt="Image du produit" />
+            </div>
+        </li>
+        
+        <li>
+            <h2>Plats Principaux:</h2>
+            <div class="menu-item" onmouseover="showImage(4)">
+                <span>Boeuf Bourguignon - 31€</span>
+                <img src="4.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(5)">
+                <span>Poulet Rôti avec Pommes de Terre - 21€</span>
+                <img src="5.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(6)">
+                <span>Filet de Saumon Grillé - 27€</span>
+                <img src="6.jpg" alt="Image du produit" />
+            </div>
+        </li>
+        
+        <li>
+            <h2>Desserts:</h2>
+            <div class="menu-item" onmouseover="showImage(7)">
+                <span>Crème Brûlée - 8€</span>
+                <img src="7.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(8)">
+                <span>Tarte aux Pommes Maison - 9€</span>
+                <img src="8.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(9)">
+                <span>Mousse au Chocolat - 8€</span>
+                <img src="9.jpg" alt="Image du produit" />
+            </div>
+        </li>
+        
+        <li>
+            <h2>Boissons:</h2>
+            <div class="menu-item" onmouseover="showImage(10)">
+                <span>Vin Rouge - 6€</span>
+                <img src="10.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(11)">
+                <span>Vin Blanc - 6€</span>
+                <img src="11.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(12)">
+                <span>Vin Rosé - 7€</span>
+                <img src="12.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(13)">
+                <span>Bières Artisanales Locales - 7.50€</span>
+                <img src="13.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(14)">
+                <span>Café - 2.50€</span>
+                <img src="14.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(15)">
+                <span>Thé - 2.50€</span>
+                <img src="15.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(16)">
+                <span>Eau Minérale - 3€</span>
+                <img src="16.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(17)">
+                <span>Chardonnay - 9€</span>
+                <img src="17.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(18)">
+                <span>Verre de jus de fruits - 3.50€</span>
+                <img src="18.jpg" alt="Image du produit" />
+            </div>
+        </li>
+        
+        <li>
+            <h2>Menu Enfant:</h2>
+            <div class="menu-item" onmouseover="showImage(19)">
+                <span>Pâtes au Beurre - 8€</span>
+                <img src="19.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(20)">
+                <span>Steak Haché avec Frites - 12.50€</span>
+                <img src="20.jpg" alt="Image du produit" />
+            </div>
+            <div class="menu-item" onmouseover="showImage(21)">
+                <span>Glace Vanille - 4.50€ (2 boules)</span>
+                <img src="21.jpg" alt="Image du produit" />
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
